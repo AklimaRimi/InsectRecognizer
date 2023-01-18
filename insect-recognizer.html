@@ -7,18 +7,30 @@ layout: page
 <div id='result'></div>
 
 <script>
-  fetch("https://rimi98-insectrecognizer.hf.space/run/predict", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    data: [
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==",
-	]
-  })})
-.then(r => r.json())
-.then(
-  r => {
-    let data = r.data;
+  async function loaded(reader)
+	{
+	const response = await fetch("https://rimi98-insectrecognizer.hf.space/run/predict", {
+	  method: "POST",
+	  headers: { "Content-Type": "application/json" },
+	  body: JSON.stringify({
+	    data: [
+	      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==",
+		]
+	  })})
+	.then(r => r.json())
+	.then(
+	  r => {
+	    let data = r.data;
+	  }
+	)
+	
+	const label = response
+	results.innerHTML = <br/> <img src= '{reader.result}' width='500'> <p>$(label)</p>
   }
-)
+	function read(){
+		const reader= new FileReader();
+		reader.addEventListener('load',() => loaded(reader))
+		reader.readAsDataURL(photo.files[0])
+	}
+	photo.addEventListener('input',read)
 </script>
