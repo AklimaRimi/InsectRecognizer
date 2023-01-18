@@ -19,6 +19,7 @@ This API can recognize insects namely:
 11. `mealy bug`
 12. `spider mites`
 13. `stink bug` 
+
 which can create a serious loss for farmers around the world.
 
 
