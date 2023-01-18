@@ -6,19 +6,19 @@ layout: page
 
 # Image Recognizer 
 This API can recognize insects namely: 
-1. `aphids`
-2. `fruit fly`
-3. `caterpillar`
-4. `colorado potato beetle`
-5. `leaf footed bugs`
-6. `grasshoper`
-7. `thrips`
-8. `mexican bean beetle`
-9. `leaf miners`
-10. `white flies`
-11. `mealy bug`
-12. `spider mites`
-13. `stink bug` 
+1. `Aphids`
+2. `Fruit Fly`
+3. `Caterpillar`
+4. `Colorado Potato Beetle`
+5. `Leaf Footed Bugs`
+6. `Grasshoper`
+7. `Thrips`
+8. `Mexican Bean Beetle`
+9. `Leaf Miners`
+10. `White Flies`
+11. `Mealy Bug`
+12. `Spider Mites`
+13. `Stink Bug` 
 
 which can create a serious loss for farmers around the world.
 
