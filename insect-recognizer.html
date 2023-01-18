@@ -19,7 +19,7 @@ layout: page
     const json = await response.json();
     const label = json['data'][0]['label'];
     label = label.toUpperCase();
-    results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p><font size="20">${label}</font></p>`;
+    results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
     }
     function read() {
         const reader = new FileReader();
