@@ -24,7 +24,7 @@ layout: page
 	  }
 	)
 	
-	const label = response
+	const label = response.json
 	results.innerHTML = <br/> <img src= '${reader.result}' width='500'> <p>${label}</p>
   }
 	function read(){
