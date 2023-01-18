@@ -5,3 +5,20 @@ layout: page
 
 <input id='photo' type='File'>
 <div id='result'></div>
+
+<script>
+  fetch("https://rimi98-insectrecognizer.hf.space/run/predict", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    data: [
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==",
+	]
+  })})
+.then(r => r.json())
+.then(
+  r => {
+    let data = r.data;
+  }
+)
+</script>
