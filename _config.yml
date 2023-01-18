@@ -1,0 +1,7 @@
+remote_theme: agency-jekyll-theme@master
+plugins:
+- jekyll-remote-theme
+title: Insect Recognizer
+description: Top 12 harmful insects for farmer.
+author:
+  name: Aklima Akter Rimi
