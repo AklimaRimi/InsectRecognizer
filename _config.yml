@@ -1,4 +1,4 @@
-remote_theme: agency-jekyll-theme@master
+remote_theme: forty-jekyll-theme@master
 plugins:
 - jekyll-remote-theme
 title: Insect Recognizer
