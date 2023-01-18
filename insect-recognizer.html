@@ -25,7 +25,7 @@ layout: page
 	)
 	
 	const label = response
-	results.innerHTML = <br/> <img src= '{reader.result}' width='500'> <p>$(label)</p>
+	results.innerHTML = <br/> <img src= '${reader.result}' width='500'> <p>${label}</p>
   }
 	function read(){
 		const reader= new FileReader();
