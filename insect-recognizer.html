@@ -17,20 +17,14 @@ layout: page
 	      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==",
 		]
 	  })})
-	.then(r => r.json())
-	.then(
-	  r => {
-	    let data = r.data;
-	  }
-	)
-	
-	const label = response.json()
-	results.innerHTML = <br/> <img src= '${reader.result}' width='500'> <p>${label}</p>
-  }
-	function read(){
-		const reader= new FileReader();
-		reader.addEventListener('load',() => loaded(reader))
-		reader.readAsDataURL(photo.files[0])
-	}
-	photo.addEventListener('input',read)
+	const json = await response.json();
+    const label = json['data'][0]['label'];
+    results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+    }
+    function read() {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => loaded(reader))
+        reader.readAsDataURL(photo.files[0]);
+    }
+    photo.addEventListener('input', read);
 </script>
