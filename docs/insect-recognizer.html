@@ -19,7 +19,7 @@ layout: page
 	  })})
     const json = await response.json();
     let label = json['data'][0]['label'];
-    results.innerHTML = `<br/> <img src = "${reader.result}" style = "height: 400px"> <p style = "color: red">${label}</p>`
+    results.innerHTML = `<br/> <img src = "${reader.result}" style = "height: 400px;"> <p style = "color: red;">${label}</p>`
     if(label === 'GRASSHOPER'){
         method.innerHTML = `<h4>Prevent Process: </h4><br/><p>Predators of grasshoppers include many insect-eating birds, such as swallows. Praying mantis insects, tiny snakes, and toads are examples of other animal species that consume grasshoppers. It is possible to lessen or get rid of grasshopper infestations by using gardening techniques that promote these natural predators.</p>
         <br/>
