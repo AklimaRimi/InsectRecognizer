@@ -18,8 +18,8 @@ layout: page
 		]
 	  })})
     const json = await response.json();
-    const label = json['data'][0]['label'];
-    results.innerHTML = `<br/> <img src = "${reader.result}" width="500" height="500"> <p style = "color: red">${label}</p>`;
+    let label = json['data'][0]['label'];
+    results.innerHTML = `<br/> <img src = "${reader.result}" width="500" height="400"> <p style = "color: red">${label}</p>`
     if(label === 'GRASSHOPER'){
         method.innerHTML = `<h4>Prevent Process: </h4><br/><p>Predators of grasshoppers include many insect-eating birds, such as swallows. Praying mantis insects, tiny snakes, and toads are examples of other animal species that consume grasshoppers. It is possible to lessen or get rid of grasshopper infestations by using gardening techniques that promote these natural predators.</p>
         <br/>
@@ -28,11 +28,99 @@ layout: page
         </p>`
     }
     else if(label === 'MEXICAN BEAN BEETLE'){
-        method.innerHTML = `<h4>Prevent Process: </h4><br/><p>When larvae are first noticed, buy and release the helpful wasp Pediobius faveolatus. Most useful in public gardens or huge plants.
+        method.innerHTML = `<h4>Prevent Process: </h4><br/><pWhen larvae are first noticed, buy and release the helpful wasp Pediobius faveolatus. Most useful in public gardens or huge plants.
         Use pesticides like spinosad, neem, or pyrethrum for serious infestations.Plants that are severely infested should be sealed in plastic bags. The plants and dead bugs can be composted after one week.        </p>`
 
     }
- }
+    else if(label === 'APHIDS'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Neem oil contains chemical compounds that repel aphids as well as other insects like mealybugs, cabbage worms, beetles, leafminers, ants, and several kinds of caterpillars. Use cautious when and where beneficial insects are present, since it can frighten them away. Use a ready-to-use neem oil spray or follow the directions on the packaging to diluted the oil in water before applying it to the affected areas. Neem oil is effective at preventing various fungi from growing.
+        </p>
+            <br>
+        <p>
+            Neem oil contains chemical compounds that repel aphids. Use cautious when and where beneficial insects are present, since it can frighten them away. Use a ready-to-use neem oil spray or follow the directions on the packaging to diluted the oil in water before applying it to the affected areas.
+        </p>`
+    }
+    else if(label === 'FRUIT FLY'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Fruit fly traps that you may get from your neighborhood store, such as sticky traps for hanging.
+            3 oz of unfiltered apple cider vinegar was placed in a little mason jar, which was then wrapped tightly in plastic. The plastic wrap should have a tiny hole pierced through the center of it, little bigger than the tip of a ballpoint pen.
+        </p>`
+    }
+    else if(label === 'CATERPILLAR'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            All you need is a spray bottle, water, and an organic liquid soap. Shake the mixture to dissolve a little bit of soap into the water, and then spritz any impacted plants. Make sure to cover the underside of leaves in addition to their upper surface.
+            Caterpillars can be deterred from devouring plants by using a pepper mixture.
+        </p>`
+    }
+    else if(label =='COLORADO POTATO BEETLE'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Neem oil should be used in the evening to avoid harming helpful insects. Neem oil needs to be applied again and again. Additionally, it works best against early larvae.
+            Your plants can benefit from floating row covers that help prevent insect infestations. Use a lightweight floating row cover that has been expressly made for the purpose, and firmly anchor the covering to the ground using soil or staples.
+        </p>
+        `
+    }
+    else if(label === 'LEAF FOOTED BUGS'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Pyrethrin, the ingredient that is advised for controlling these insects, was present in insecticides.
+            Only botanicals or insecticidal soap may offer some control over immature nymphs. Examples include neem oil and pyrethrin.
+        </p>`
+    }
+    else if(label === 'THRIPS'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Blue sticky traps are useful for keeping an eye on populations of adults.
+            Release thrips predatory insects, ladybugs, and lacewings, which are readily accessible commercially, to attack and eliminate all phases of this pest. Make releases after eradicating severe infestations with water spray or another means for best effects.
+            Spot treating strongly infested areas with spinosad and neem oil is an option.
+        </p>`
+    }
+    else if(label ==='LEAF MINERS'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            To keep leaf miners away from your priceless plants, plant trap crops. To draw leaf miners, plant species including columbine, lambs' quarters, and velvet leaf should be used.
+            Neem oil should be used as specified on the bottle. The normal life cycle of the leaf miner is impacted by this organic insecticide, which lowers the number of larvae that mature into adults and, consequently, the quantity of eggs that the adults will lay.
+        </p>
+        `
+    }
+    else if(label === 'WHITE FLIES'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Irrigation hose or a spray bottle They will scatter as a result, partially uprooting eggs and nymphs.
+            Spray the foliage of your plants with an insecticidal soap. Make sure to also spray the undersides of the leaves. If necessary, follow up two or three times.
+            Spread on little boards painted bright yellow, a mixture of petroleum jelly and dish soap is sticky enough to snag tiny whiteflies.
+        </p>
+        `
+    }
+    else if(label==='MEALY BUG'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Irrigation hose or a spray bottle They will scatter as a result, partially uprooting eggs and nymphs.
+            Spray the foliage of your plants with an insecticidal soap. Make sure to also spray the undersides of the leaves. If necessary, follow up two or three times.
+            Spread on little boards painted bright yellow, a mixture of petroleum jelly and dish soap is sticky enough to snag tiny mealy bugs.
+        </p>
+        `
+    }
+    else if(label ==='SPIDER MITES'){
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            Spider mites are frequently successfully eradicated with insecticidal soaps, which are designed to eradicate insects and other pests. Up till the mite problem is under control, treatment will need to be performed often.
+            Spraying your plants with a solution made of 1 cup of rubbing alcohol and 4 cups of water will kill spider mites.
+            Neem oil is a pure natural substance made from the neem tree. Neem oil kills a range of insects, pests, and mites but is safe for humans and the majority of animals.
+        </p>`
+    }
+    else{
+        method.innerHTML = `<h4>Prevent Process: </h4><br/>
+        <p>
+            It is recommended that a basic "trap" for stink bugs consist of hot water, dish soap, and white vinegar. (Farm & Dairy suggests directly spraying the bugs with a solution made of two cups of hot water, one cup of white vinegar, and half a cup of dish soap.)
+         </p>`
+
+    }
+    }
     function read() {
         const reader = new FileReader();
         reader.addEventListener('load', () => loaded(reader))
