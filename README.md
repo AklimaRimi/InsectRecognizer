@@ -23,6 +23,15 @@ In this project I wanted to create an app so that farmers can find out what pest
 
   3. Valid: After Training I used the final trained model `model6-90%_.pkl` for validation.
   
+  **Clarification**
+  1. Confusion Matrix: 
+  ![](https://github.com/AklimaRimi/InsectRecognizer/blob/main/output/confusion.png)
+  
+  2. Loss Result:
+  ![](https://github.com/AklimaRimi/InsectRecognizer/blob/main/output/result.png)
+  
+  We can see this image is actually a 'caterpillar' but the original image says it is a 'grasshopper'. So my model can correctly recognize this insect, which is a very good sign.
+  
   ## ***Deployment***
   
   As I want to make an app, I have to deploy my project. So I've chosen the `HuggingFace` website to deploy. 
