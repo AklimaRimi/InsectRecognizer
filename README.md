@@ -25,12 +25,16 @@ In this project I wanted to create an app so that farmers can find out what pest
   
   **Clarification**
   1. Confusion Matrix: 
+
+
   ![](https://github.com/AklimaRimi/InsectRecognizer/blob/main/output/confusion.png)
   
   2. Loss Result:
+
+
   ![](https://github.com/AklimaRimi/InsectRecognizer/blob/main/output/result.png)
   
-  We can see this image is actually a 'caterpillar' but the original image says it is a 'grasshopper'. So my model can correctly recognize this insect, which is a very good sign.
+  We can see this image is actually a `caterpillar` but the original image says it is a `Grasshopper~. So my model can correctly recognize this insect, which is a very good sign.
   
   ## ***Deployment***
   
