@@ -17,9 +17,11 @@ In this project I wanted to create an app so that farmers can find out what pest
 
   As I used the `fastai` api for this project, I had to do augmentation,training and validate my model at the same time. 
   1. Augmentation: resize all images and saved them as [dataloders](https://github.com/AklimaRimi/InsectRecognizer/tree/main/dataloaders)
-  2. Train: For training purposes I've used the `resnet34` model. This model is faster and more accurate than any other model I found and saved them in [models](https://github.com/AklimaRimi/InsectRecognizer/tree/main/models)
-  I've also used `resnet50` ,`vgg16` models but `resnet34` gave the best result. 
-  3. Valid: After Training I used the final trained model `model3-86_.pkl` for validation.
+  2. Train: For training purposes I've used the `resnet50` model. This model is faster and more accurate than any other model I found and saved them in [models](https://github.com/AklimaRimi/InsectRecognizer/tree/main/models)
+  
+  I've also used `resnet34`,`vgg16` which are faster but less accurate than `resnet50` 
+
+  3. Valid: After Training I used the final trained model `model6-90%_.pkl` for validation.
   
   ## ***Deployment***
   
