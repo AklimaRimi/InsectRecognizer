@@ -9,7 +9,7 @@ import pathlib
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
-model_path  = 'C:\pythons\Deep Learning\insect\insects-recognizer\models\model3-86_.pkl'
+model_path  = 'models\model3-86_.pkl'
 
 model = load_learner(model_path)
 
