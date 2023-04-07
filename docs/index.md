@@ -4,7 +4,7 @@ layout: page
 ---
 
 
-# Image Recognizer 
+# Insect Recognizer 
 This API can recognize insects namely: 
 1. `Aphids`
 2. `Fruit Fly`
