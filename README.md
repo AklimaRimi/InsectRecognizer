@@ -2,6 +2,10 @@
 
 # Motive and Goal
 
+Rendered Website            |  
+:-------------------------:|
+![](https://github.com/AklimaRimi/InsectRecognizer/blob/main/output/github.png) |
+
 As Bangladesh is an agricultural country, every year farmers lose a large amount of value due to insect attack on their crops, as a result they work hard but do not earn enough money due to spending their capital. So farmers need to know their enemies to protect their crops from insects.
 
 In this project I wanted to create an app so that farmers can find out what pests they are facing and how to prevent those insects.
